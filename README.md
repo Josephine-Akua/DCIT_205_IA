@@ -1,6 +1,5 @@
 # DCIT_205_IA
 11253242 Josephine Yayra Azoyi
-INTRODUCTION
 
 Overview of Project
 The website is a portfolio website for the computer science department. The purpose of the University of Ghana Computer Science Department website is to create a cohesive and accessible online space for our academic community. It serves as a central hub, providing essential information on departmental faculty and courses. The site showcases our commitment to innovation through cutting-edge research centers and highlights the achievements of our faculty and alumni. Additionally, it offers resources, event calendars, and opportunities for collaboration, fostering a sense of community. With a user-friendly design, the website aims to enhance communication, showcase our expertise, and inspire the next generation of computing professionals within and beyond the University of Ghana.

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Computer Science Department</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img\comScience_logo.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Sections</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Home section starts from here -->
+	<section id="home">
+		<video autoplay loop muted playsinline>
+			<source src="img/homepage_video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<h1>
+			Welcome to the Department of Computer Science
+		</h1>
+		<h2>
+			YOUR GATEWAY TO WORLD CLASS COMPUTER SCIENCE EDUCATION
+		</h2>
+	</section>
+	<!-- Home section ends from here -->
+
+
+	<!-- Features section starts from here -->
+	<section id="features">
+		<h1>Why Choose Us?</h1>
+		
+		<div class="fea-base">
+			<div class="fea-box">
+				<h3>Cutting-Edge Research</h3>
+				<p>
+					Our faculty members are at the forefront of research in areas such as artificial intelligence, data science, cybersecurity, and more. Join us in pushing the boundaries of what's possible.
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<h3>Diverse and Inclusive Community</h3>
+				<p>
+					We embrace diversity and believe in the power of varied perspectives. Our department is a welcoming and inclusive community for all.
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<h3>State-of-the-Art Facilities</h3>
+				<p>
+					Explore our modern labs equipped with the latest hardware and software, providing students with hands-on experience in real-world applications.
+				</p>
+			</div>
+			<div class="fea-box">
+				<h3>Industry Connections</h3>
+				<p>
+					We maintain strong partnerships with industry leaders, offering students opportunities for internships, co-op programs, and networking.
+				</p>
+			</div>
+			<div class="fea-box">
+				<h3>Outstanding Alumni</h3>
+				<p>
+					Our alumni have gone on to work at top tech companies, launch successful startups, and contribute to groundbreaking research.
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- Features section ends from here -->
+
+
+	
+
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Academics</h3>
+			<li>Undergraduate Courses</li>
+			<li>Graduate Courses</li>
+			<li>Academic Calender</li>
+			<li>Timetable</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Admissions</h3>
+			<li>Undergraduate</li>
+			<li>Graduate</li>
+			<li>International Students</li>
+			<li>Entry Requirements</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Research</h3>
+			<li>Research at DCS</li>
+			<li>Research Impact</li>
+			<li>Libraries</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>About the Department</h3>
+			<li>Introducing DCS</li>
+			<li>Head of Department's Office</li>
+			<li>Faculty</li>
+			<li>Events</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>We only send school info and offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2023 All rights reserved 
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

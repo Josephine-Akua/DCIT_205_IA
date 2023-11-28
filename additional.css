@@ -1,0 +1,59 @@
+.university-info-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    overflow: hidden; /* To hide parts of the block during animation */
+}
+
+.info-block {
+    background: #fff;
+    margin: 20px auto; /* Center the blocks */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 80%; /* Adjust width as needed */
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.info-title {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-block p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes slideFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slideFromRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slideFromBottom {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+/* Applying animations to each block */
+.university-info-section .info-block:nth-child(1) {
+    animation-name: slideFromLeft;
+}
+
+.university-info-section .info-block:nth-child(2) {
+    animation-name: slideFromRight;
+}
+
+.university-info-section .info-block:nth-child(3) {
+    animation-name: slideFromBottom;
+}
+

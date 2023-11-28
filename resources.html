@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single post</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="resources.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img\comScience_logo.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Sections</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+     <!-- Resources Section Start -->
+<section class="resources-section">
+    <h2 class="section-title">Computer Science Department Resources</h2>
+    <div class="resources-grid">
+        <!-- Online Library -->
+        <div class="resource-item">
+            <i class="fas fa-book"></i>
+            <h3>Online Library</h3>
+            <p>Explore a vast collection of e-books and journals.</p>
+            <a href="https://balme.ug.edu.gh/" class="resource-link">Visit Library</a>
+        </div>
+
+        <!-- IT Support -->
+        <div class="resource-item">
+            <i class="fas fa-laptop-code"></i>
+            <h3>IT Support</h3>
+            <p>Get assistance with IT-related issues, including software and hardware.</p>
+            <a href="https://itsupport.ug.edu.gh" class="resource-link">Get Support</a>
+        </div>
+
+        <!-- Academic Advising -->
+        <div class="resource-item">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Academic Advising</h3>
+            <p>Guidance on course selection, career advice, and academic planning.</p>
+            <a href="https://cs.ug.edu.gh/advising" class="resource-link">Learn More</a>
+        </div>
+
+        <!-- Research Opportunities -->
+        <div class="resource-item">
+            <i class="fas fa-search"></i>
+            <h3>Research Opportunities</h3>
+            <p>Discover research projects and opportunities for undergraduate and graduate students.</p>
+            <a href="https://cs.ug.edu.gh/research" class="resource-link">Explore Research</a>
+        </div>
+    </div>
+</section>
+<!-- Resources Section End -->
+
+    <!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Academics</h3>
+			<li>Undergraduate Courses</li>
+			<li>Graduate Courses</li>
+			<li>Academic Calender</li>
+			<li>Timetable</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Admissions</h3>
+			<li>Undergraduate</li>
+			<li>Graduate</li>
+			<li>International Students</li>
+			<li>Entry Requirements</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Research</h3>
+			<li>Research at DCS</li>
+			<li>Research Impact</li>
+			<li>Libraries</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>About the Department</h3>
+			<li>Introducing DCS</li>
+			<li>Head of Department's Office</li>
+			<li>Faculty</li>
+			<li>Events</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>We only send school info and offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2023 All rights reserved 
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

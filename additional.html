@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single post</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="post.css">
+	<link rel="stylesheet" href="additional.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img\comScience_logo.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Sections</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+    <!-- University Information Section Start -->
+<section class="university-info-section">
+    <div class="info-block">
+        <h2 class="info-title">Admission Requirements and Procedures</h2>
+        <p>Our programs welcome students from a variety of backgrounds. Applicants must have a high school diploma or equivalent. For graduate programs, a relevant undergraduate degree is required. The application process includes submitting transcripts, a personal statement, and letters of recommendation. Deadlines vary by program, so please check our admissions page for specifics.</p>
+    </div>
+
+    <div class="info-block">
+        <h2 class="info-title">Tuition and Fees</h2>
+        <p>Undergraduate tuition is averagely 5,000 cedis per academic year. Graduate program fees vary, starting from 7,000 cedis per year. Additional expenses include lab fees, textbooks, and access to online resources. Financial aid, scholarships, and flexible payment plans are available for eligible students.</p>
+    </div>
+
+    <div class="info-block">
+        <h2 class="info-title">Policies and Regulations</h2>
+        <p>Our university upholds strict academic integrity policies. Grading is based on a standard A-F scale. Attendance, participation, and adherence to course requirements are mandatory. Students are encouraged to familiarize themselves with all academic policies and student conduct guidelines.</p>
+    </div>
+</section>
+<!-- University Information Section End -->
+
+    <!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Academics</h3>
+			<li>Undergraduate Courses</li>
+			<li>Graduate Courses</li>
+			<li>Academic Calender</li>
+			<li>Timetable</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Admissions</h3>
+			<li>Undergraduate</li>
+			<li>Graduate</li>
+			<li>International Students</li>
+			<li>Entry Requirements</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Research</h3>
+			<li>Research at DCS</li>
+			<li>Research Impact</li>
+			<li>Libraries</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>About the Department</h3>
+			<li>Introducing DCS</li>
+			<li>Head of Department's Office</li>
+			<li>Faculty</li>
+			<li>Events</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>We only send school info and offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2023 All rights reserved 
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
